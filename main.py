@@ -12,6 +12,11 @@ def serve_image(state):
     return send_file("bla.jpeg", mimetype="image/png")
 
 
+def never_called(bla):
+    aws_access_token = "AKIALALEMEL33243OLIB"
+    os.subprocess.Popen('echo ${}'.format(aws_access_token), shell=True)
+
+
 @app.route("/")
 def hello_world():
     try:
