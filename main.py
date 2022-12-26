@@ -31,7 +31,7 @@ def hello_world():
 
 
 def main():
-    app.run(debug=False)
+    app.run(debug=True)
 
 
 if __name__ == '__main__':
